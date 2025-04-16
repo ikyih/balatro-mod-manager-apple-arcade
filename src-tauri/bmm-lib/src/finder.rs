@@ -77,7 +77,7 @@ pub fn get_balatro_paths() -> Vec<PathBuf> {
     match home::home_dir() {
         Some(path) => {
             let mut path = path;
-            path.push("Library/Application Support/Steam/steamapps/common/Balatro");
+            path.push("/Users/~/Library/Containers/com.playstack.balatroarcade/Data/Library/Application Support/com.playstack.balatroarcade");
             paths.push(path);
         }
         None => error!("Impossible to get your home dir!"),

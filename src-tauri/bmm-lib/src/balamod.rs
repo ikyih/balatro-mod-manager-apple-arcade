@@ -19,7 +19,7 @@ impl Balatro {
     pub fn get_exe_path(&self) -> PathBuf {
         self.path
             .clone()
-            .join("Balatro.app/Contents/Resources/Balatro.love")
+            .join("Balatro.app/Contents/MacOS/Balatro")
     }
     #[cfg(target_os = "windows")]
     pub fn get_exe_path(&self) -> PathBuf {
